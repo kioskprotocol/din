@@ -1,0 +1,29 @@
+{
+  "name": "din",
+  "version": "1.0.0",
+  "description": "Decentralized Identification Number",
+  "main": "contracts/DINRegistry.sol",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kioskprotocol/din.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kioskprotocol/din/issues"
+  },
+  "homepage": "https://github.com/kioskprotocol/din#readme",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "dotenv": "^4.0.0",
+    "ethereumjs-wallet": "^0.6.0",
+    "web3-eth-abi": "^1.0.0-beta.27",
+    "web3-provider-engine": "^13.4.0"
+  }
+}
