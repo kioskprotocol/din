@@ -1,4 +1,4 @@
-pragma solidity ^0.4.11;
+pragma solidity ^0.4.17;
 
 /** @title Decentralized Identification Number (DIN) registry. */
 contract DINRegistry {
@@ -48,7 +48,7 @@ contract DINRegistry {
     /**
      * @dev Get the owner of a specific DIN.
      */
-    function owner(uint256 _DIN) public constant returns (address) {
+    function owner(uint256 _DIN) public view returns (address) {
         return records[_DIN].owner;
     }
 
@@ -66,7 +66,7 @@ contract DINRegistry {
     /**
      * @dev Get the address of the resolver contract for a specific DIN.
      */
-    function resolver(uint256 _DIN) public constant returns (address) {
+    function resolver(uint256 _DIN) public view returns (address) {
         return records[_DIN].resolver;
     }
 
@@ -86,7 +86,7 @@ contract DINRegistry {
      * @param _DIN The DIN to query.
      * @return _timestamp Last updated time (Unix timestamp).
      */
-    function updated(uint256 _DIN) public constant returns (uint256 _timestamp) {
+    function updated(uint256 _DIN) public view returns (uint256 _timestamp) {
         return records[_DIN].updated;
     }
 
