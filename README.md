@@ -19,7 +19,7 @@ The **`DINRegistry`** contains four methods to register a new DIN:
 * **`registerDIN`**
 * **`registerDINWithResolver`**
 
-Additionally, the **`DINRegistryUtils`** contract contains convenience methods to register multiple DINs at once since this will likely be a common task.
+In addition, the **`DINRegistryUtils`** contract contains convenience methods to register multiple DINs at once since this will likely be a common task:
 
 * **`selfRegisterDINs`**
 * **`selfRegisterDINsWithResolver`**
