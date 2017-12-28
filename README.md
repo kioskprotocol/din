@@ -1,6 +1,6 @@
 # DIN
 
-A Decentralized Identification Number (DIN) is a unique product identifier that is adminstered by the global **`DINRegistry`** Ethereum smart contract.
+A Decentralized Identification Number (DIN) is a unique product identifier that is adminstered by the global `DINRegistry` Ethereum smart contract.
 
 **[DINRegistry.sol](./contracts/DINRegistry.sol)**
 
@@ -12,18 +12,18 @@ ABI:
 
 ## Registration
 
-The **`DINRegistry`** contains four methods to register a new DIN:
+The `DINRegistry` contains four methods to register a new DIN:
 
-* **`selfRegisterDIN`**
-* **`selfRegisterDINWithResolver`**
-* **`registerDIN`**
-* **`registerDINWithResolver`**
+* `selfRegisterDIN`
+* `selfRegisterDINWithResolver`
+* `registerDIN`
+* `registerDINWithResolver`
 
-In addition, the **`DINRegistryUtils`** contract contains convenience methods to register multiple DINs at once since this will likely be a common task:
+In addition, the `DINRegistryUtils` contract contains convenience methods to register multiple DINs at once since this will likely be a common task:
 
-* **`selfRegisterDINs`**
-* **`selfRegisterDINsWithResolver`**
-* **`registerDINs`**
-* **`registerDINsWithResolver`**
+* `selfRegisterDINs`
+* `selfRegisterDINsWithResolver`
+* `registerDINs`
+* `registerDINsWithResolver`
 
 Only approximately 100 DINs can be registered in a single transaction due to Ethereum gas limits.
