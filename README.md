@@ -1,6 +1,8 @@
 # DIN
 
-A Decentralized Identification Number (DIN) is a unique product identifier that is adminstered by the global `DINRegistry` Ethereum smart contract.
+The Decentralized Identification Number (DIN) is an open standard for product identification. A DIN is a globally unique, 10-digit number that can be registered via an Ethereum smart contract called the `DINRegistry`.
+
+## Contracts
 
 **[DINRegistry.sol](./contracts/DINRegistry.sol)**
 
