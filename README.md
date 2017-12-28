@@ -36,4 +36,4 @@ In addition, the `DINRegistryUtils` contract contains convenience methods to reg
 * `registerDINs`
 * `registerDINsWithResolver`
 
-Only approximately 100 DINs can be registered in a single transaction due to Ethereum gas limits.
+Only approximately 100 DINs can be registered in a single transaction due to Ethereum gas limits. The registry contract was intentionally kept simple in favor of coding around this limitation.
