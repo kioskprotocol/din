@@ -14,18 +14,16 @@ ABI:
 
 The **`DINRegistry`** contains four methods to register a new DIN:
 
-**`selfRegisterDIN`**
+* **`selfRegisterDIN`**
+* **`selfRegisterDINWithResolver`**
+* **`registerDIN`**
+* **`registerDINWithResolver`**
 
-Self-register a new DIN.
+Additionally, the **`DINRegistryUtils`** contract contains convenience methods to register multiple DINs at once since this will likely be a common task.
 
-**`selfRegisterDINWithResolver`**
+* **`selfRegisterDINs`**
+* **`selfRegisterDINsWithResolver`**
+* **`registerDINs`**
+* **`registerDINsWithResolver`**
 
-Self-register a new DIN and set the resolver.
-
-**`registerDIN`**
-
-Register a new DIN for a specific address.
-
-**`registerDINWithResolver`**
-
-Register a new DIN for a specific address and set the resolver.
+Only approximately 100 DINs can be registered in a single transaction due to Ethereum gas limits.
