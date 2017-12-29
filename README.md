@@ -22,7 +22,7 @@ ABI:
 
 ## Registration
 
-The `DINRegistry` contains four methods to register a new DIN:
+The `DINRegistry` contains four options to register a new DIN:
 
 * `selfRegisterDIN`
 * `selfRegisterDINWithResolver`
@@ -36,13 +36,13 @@ In addition, the `DINRegistryUtils` contract contains convenience methods to reg
 * `registerDINs`
 * `registerDINsWithResolver`
 
-Only approximately 100 DINs can be registered in a single transaction due to Ethereum gas limits. The registry contract was intentionally kept simple in favor of coding around this limitation.
+DINs are registered sequentially on a first-come, first-served basis beginning with the genesis DIN of `1000000000`. Any Ethereum account can register a DIN by calling a registration methods and paying the gas cost of the transaction.
 
-DINs are registered sequentially on a first-come, first-served basis beginning with the genesis DIN of `1000000000`. Any Ethereum account can register a DIN by calling a registration methods and paying the gas cost of the transaction. There is no native token or permission required to register a DIN on the registry.
+Only approximately 100 DINs can be registered in a single transaction due to Ethereum gas limits. The registry contract was intentionally kept simple in favor of coding around this limitation.
 
 ## Resolver
 
-A `Resolver` is a contract that contains product information.
+A `Resolver` is a contract that contains information about a product.
 
 A `Resolver` must implement the following method, as specified in [EIP165](https://github.com/ethereum/EIPs/issues/165):
 
