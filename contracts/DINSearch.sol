@@ -24,7 +24,7 @@ contract DINSearch {
         uint max = registry.index();
         uint[] memory DINs = new uint[](count);
         uint i = 0;
-        for (uint j = min; j < max; j++) {
+        for (uint j = min; j <= max; j++) {
             if (registry.owner(j) == owner) {
                 DINs[i] = j;
                 if (i == count - 1) {
@@ -47,7 +47,7 @@ contract DINSearch {
         uint max = registry.index();
         uint[] memory DINs = new uint[](count);
         uint i = 0;
-        for (uint j = min; j < max; j++) {
+        for (uint j = min; j <= max; j++) {
             if (registry.resolver(j) == resolver) {
                 DINs[i] = j;
                 if (i == count - 1) {
