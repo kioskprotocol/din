@@ -32,7 +32,7 @@
       "absolutePath": "/Users/richardmcateer/Developer/Ethereum/kiosk/din/contracts/resolver/Resolver.sol",
       "exportedSymbols": {
         "Resolver": [
-          9
+          639
         ]
       }
     },
@@ -46,9 +46,9 @@
             ".17"
           ]
         },
-        "id": 1,
+        "id": 631,
         "name": "PragmaDirective",
-        "src": "0:24:0"
+        "src": "0:24:4"
       },
       {
         "attributes": {
@@ -62,10 +62,10 @@
           "documentation": "@title Base resolver contract ",
           "fullyImplemented": false,
           "linearizedBaseContracts": [
-            9
+            639
           ],
           "name": "Resolver",
-          "scope": 10
+          "scope": 640
         },
         "children": [
           {
@@ -79,7 +79,7 @@
               ],
               "name": "supportsInterface",
               "payable": false,
-              "scope": 9,
+              "scope": 639,
               "stateMutability": "pure",
               "superFunction": null,
               "visibility": "public"
@@ -91,7 +91,7 @@
                     "attributes": {
                       "constant": false,
                       "name": "interfaceID",
-                      "scope": 8,
+                      "scope": 638,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "bytes4",
@@ -104,19 +104,19 @@
                           "name": "bytes4",
                           "type": "bytes4"
                         },
-                        "id": 2,
+                        "id": 632,
                         "name": "ElementaryTypeName",
-                        "src": "165:6:0"
+                        "src": "165:6:4"
                       }
                     ],
-                    "id": 3,
+                    "id": 633,
                     "name": "VariableDeclaration",
-                    "src": "165:18:0"
+                    "src": "165:18:4"
                   }
                 ],
-                "id": 4,
+                "id": 634,
                 "name": "ParameterList",
-                "src": "164:20:0"
+                "src": "164:20:4"
               },
               {
                 "children": [
@@ -124,7 +124,7 @@
                     "attributes": {
                       "constant": false,
                       "name": "",
-                      "scope": 8,
+                      "scope": 638,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "bool",
@@ -137,34 +137,34 @@
                           "name": "bool",
                           "type": "bool"
                         },
-                        "id": 5,
+                        "id": 635,
                         "name": "ElementaryTypeName",
-                        "src": "206:4:0"
+                        "src": "206:4:4"
                       }
                     ],
-                    "id": 6,
+                    "id": 636,
                     "name": "VariableDeclaration",
-                    "src": "206:4:0"
+                    "src": "206:4:4"
                   }
                 ],
-                "id": 7,
+                "id": 637,
                 "name": "ParameterList",
-                "src": "205:6:0"
+                "src": "205:6:4"
               }
             ],
-            "id": 8,
+            "id": 638,
             "name": "FunctionDefinition",
-            "src": "138:74:0"
+            "src": "138:74:4"
           }
         ],
-        "id": 9,
+        "id": 639,
         "name": "ContractDefinition",
-        "src": "63:151:0"
+        "src": "63:151:4"
       }
     ],
-    "id": 10,
+    "id": 640,
     "name": "SourceUnit",
-    "src": "0:214:0"
+    "src": "0:214:4"
   },
   "compiler": {
     "name": "solc",
@@ -172,5 +172,5 @@
   },
   "networks": {},
   "schemaVersion": "1.0.1",
-  "updatedAt": "2017-12-26T04:30:50.623Z"
+  "updatedAt": "2018-01-05T23:04:46.630Z"
 }

@@ -13,7 +13,13 @@ contract DINSearch {
         registry = _registry;
     }
 
-    function DINsWithOwner(address owner, uint count, uint minDIN) public view returns (uint[]) {
+    /**
+     * @dev Search for DINs with a specific owner.
+     * @param owner Address of the owner.
+     * @param count Maximum number of DINs to return.
+     * @param minDIN Minimum DIN to start search.
+     */
+    function DINsWithOwner(address owner, uint count, uint minDIN) public view returns (uint[] result) {
         uint min = minDIN > genesis ? minDIN : genesis;
         uint max = registry.index();
         uint[] memory DINs = new uint[](count);
@@ -30,7 +36,13 @@ contract DINSearch {
         return DINs;
     }
 
-    function DINsWithResolver(address resolver, uint count, uint minDIN) public view returns (uint[]) {
+    /**
+     * @dev Search for DINs with a specific resolver.
+     * @param owner Address of the resolver.
+     * @param count Maximum number of DINs to return.
+     * @param minDIN Minimum DIN to start search.
+     */
+    function DINsWithResolver(address resolver, uint count, uint minDIN) public view returns (uint[] result) {
         uint min = minDIN > genesis ? minDIN : genesis;
         uint max = registry.index();
         uint[] memory DINs = new uint[](count);
