@@ -5,7 +5,7 @@ import "./DINRegistry.sol";
 /** @title Convenience methods for DINRegistry */
 contract DINRegistryUtils {
 
-    DINRegistry registry;
+    DINRegistry public registry;
 
     // Constructor
     function DINRegistryUtils(DINRegistry _registry) public {
