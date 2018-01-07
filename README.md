@@ -8,10 +8,12 @@ The Decentralized Identification Number (DIN) is an open standard for product id
 
 The DINRegistry records the owner and resolver of each registered DIN.
 
-Address (Ethereum Main Net): [0xd8096aBb6ff38b912Ff7dCebdDcF6bd2bed468BB](https://etherscan.io/address/0xd8096abb6ff38b912ff7dcebddcf6bd2bed468bb#code)
+**Address:**
 
+Ethereum Main Net: [0xd8096aBb6ff38b912Ff7dCebdDcF6bd2bed468BB](https://etherscan.io/address/0xd8096abb6ff38b912ff7dcebddcf6bd2bed468bb#code)
+
+**ABI:**
 ```
-ABI:
 [{"constant":false,"inputs":[{"name":"_resolver","type":"address"}],"name":"selfRegisterDINWithResolver","outputs":[{"name":"_DIN","type":"uint256"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[{"name":"_DIN","type":"uint256"}],"name":"resolver","outputs":[{"name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"index","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"_owner","type":"address"},{"name":"_resolver","type":"address"}],"name":"registerDINWithResolver","outputs":[{"name":"_DIN","type":"uint256"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"_DIN","type":"uint256"},{"name":"_owner","type":"address"}],"name":"setOwner","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"_owner","type":"address"}],"name":"registerDIN","outputs":[{"name":"_DIN","type":"uint256"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[{"name":"_DIN","type":"uint256"}],"name":"owner","outputs":[{"name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[],"name":"selfRegisterDIN","outputs":[{"name":"_DIN","type":"uint256"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"genesis","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"_DIN","type":"uint256"}],"name":"updated","outputs":[{"name":"_timestamp","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"_DIN","type":"uint256"},{"name":"_resolver","type":"address"}],"name":"setResolver","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"inputs":[{"name":"_genesis","type":"uint256"}],"payable":false,"stateMutability":"nonpayable","type":"constructor"},{"anonymous":false,"inputs":[{"indexed":true,"name":"DIN","type":"uint256"},{"indexed":true,"name":"owner","type":"address"}],"name":"NewOwner","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"name":"DIN","type":"uint256"},{"indexed":true,"name":"resolver","type":"address"}],"name":"NewResolver","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"name":"DIN","type":"uint256"},{"indexed":true,"name":"owner","type":"address"}],"name":"NewRegistration","type":"event"}]
 ```
 
@@ -19,10 +21,12 @@ ABI:
 
 DINRegistryUtils offers convenience methods for registering multiple DINs in a single transaction.
 
-Address (Ethereum Main Net): [0x9D4A30eF4e467dC0a635748F09b46caE5Ae27b27](https://etherscan.io/address/0x9D4A30eF4e467dC0a635748F09b46caE5Ae27b27#code)
+**Address:**
 
+Ethereum Main Net: [0x9D4A30eF4e467dC0a635748F09b46caE5Ae27b27](https://etherscan.io/address/0x9D4A30eF4e467dC0a635748F09b46caE5Ae27b27#code)
+
+**ABI:**
 ```
-ABI:
 [{"constant":false,"inputs":[{"name":"resolver","type":"address"},{"name":"amount","type":"uint256"}],"name":"selfRegisterDINsWithResolver","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"owner","type":"address"},{"name":"resolver","type":"address"},{"name":"amount","type":"uint256"}],"name":"registerDINsWithResolver","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"amount","type":"uint256"}],"name":"selfRegisterDINs","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"owner","type":"address"},{"name":"amount","type":"uint256"}],"name":"registerDINs","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"inputs":[{"name":"_registry","type":"address"}],"payable":false,"stateMutability":"nonpayable","type":"constructor"}]
 ```
 
