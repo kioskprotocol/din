@@ -52,8 +52,21 @@ Only approximately 100 DINs can be registered in a single transaction due to Eth
 
 ## Resolver
 
-A `Resolver` is a contract that contains information about a product.
+A `Resolver` contract resolves a DIN to an off-chain resource that contains product metadata. A single resolver contract can resolve many DINs.
 
 A `Resolver` must implement the following method, as specified in [EIP165](https://github.com/ethereum/EIPs/issues/165):
 
 `function supportsInterface(bytes4 interfaceID) view returns (bool)`
+
+For now, the off-chain resource should be a URL.
+
+```
+Interface ID: 0xaf655719 // bytes4(keccak256("productURL(uint256)"))
+function productURL(uint256 DIN) public view returns (string);
+```
+
+Product metadata should conform to the schema.org specification for a [Product](http://schema.org/Product).
+
+## Acknowledgements
+
+DIN uses registry and resolver smart contracts based on those implemented by the [Ethereum Name Service (ENS)](https://github.com/ethereum/ens).
